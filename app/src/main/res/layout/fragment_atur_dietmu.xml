@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AturDietmuFragment">
+
+    <ImageView
+        android:id="@+id/im_backgroundaturdietmu"
+        android:layout_width="436dp"
+        android:layout_height="168dp"
+        android:src="@drawable/kotak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_aturdietmu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/kotakbiruluar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_aturdietmu1dalam"
+        android:layout_width="122.16dp"
+        android:layout_height="96.42dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="#3BD3D6 "
+        android:rotation="-21"
+        android:src="@drawable/kotakbirudalam1"
+        app:layout_constraintBottom_toBottomOf="@+id/im_aturdietmu1"
+        app:layout_constraintEnd_toEndOf="@+id/im_aturdietmu1" />
+
+    <TextView
+        android:id="@+id/tv_aturdietmupage"
+        android:layout_width="145dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Atur Dietmu"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/im_aturdietmu1"
+        app:layout_constraintStart_toStartOf="@+id/im_aturdietmu1" />
+
+    <ImageView
+        android:id="@+id/im_kotakbiru1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/kotakbiru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_makananrendahkalori" />
+
+    <ImageView
+        android:id="@+id/im_kotakpink1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/kotakpink"
+        app:layout_constraintStart_toEndOf="@+id/im_kotakbiru1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_makananrendahkalori" />
+
+    <ImageView
+        android:id="@+id/im_kotakbiru2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/kotakbiru"
+        app:layout_constraintEnd_toStartOf="@+id/im_kotakpink2"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toEndOf="@+id/im_kotakpink1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_makananrendahkalori" />
+
+    <ImageView
+        android:id="@+id/im_kotakpink2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/kotakpink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_makananrendahkalori" />
+
+    <TextView
+        android:id="@+id/tv_makananrendahkalori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Makanan Rendah Kalori"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_aturdietmu1" />
+
+    <ImageView
+        android:id="@+id/im_salad"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/salad"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakbiru1"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakbiru1"
+        app:layout_constraintTop_toTopOf="@+id/im_kotakbiru1" />
+
+    <ImageView
+        android:id="@+id/im_cake"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/pancake"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakpink1"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakpink1"
+        app:layout_constraintTop_toTopOf="@+id/im_kotakpink1" />
+
+    <ImageView
+        android:id="@+id/im_pie"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/pie"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakbiru2"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakbiru2"
+        app:layout_constraintTop_toTopOf="@+id/im_kotakbiru2" />
+
+    <ImageView
+        android:id="@+id/im_smoothie"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/smoothies"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakpink2"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakpink2"
+        app:layout_constraintTop_toTopOf="@+id/im_kotakpink2" />
+
+    <ImageView
+        android:id="@+id/im_kotakbirumakanan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/kotakbirumakanan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_detailsmakanan2"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#7387DD"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Details"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:cornerRadius="99dp"
+        app:layout_constraintBottom_toBottomOf="@+id/im_kotakbirumakanan2"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakbirumakanan2"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakbirumakanan2" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="111dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/pancake_2"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakbirumakanan2"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakbirumakanan2"
+        app:layout_constraintTop_toTopOf="@+id/im_kotakbirumakanan2" />
+
+    <TextView
+        android:id="@+id/tv_salad"
+        android:layout_width="48dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Salad"
+        app:layout_constraintBottom_toBottomOf="@+id/im_kotakbiru1"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakbiru1"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakbiru1" />
+
+    <TextView
+        android:id="@+id/tv_cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Cake"
+        app:layout_constraintBottom_toBottomOf="@+id/im_kotakpink1"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakpink1"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakpink1" />
+
+    <TextView
+        android:id="@+id/tv_pie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Pie"
+        app:layout_constraintBottom_toBottomOf="@+id/im_kotakbiru2"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakbiru2"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakbiru2" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Smoothies"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/im_kotakpink2"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakpink2"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakpink2" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Blueberry Pancake"
+        app:layout_constraintEnd_toEndOf="@+id/im_kotakbirumakanan2"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/im_kotakbirumakanan2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

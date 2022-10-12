@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/biru1"
+        android:layout_width="437dp"
+        android:layout_height="284dp"
+        android:src="@drawable/biru1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/biru2"
+        android:layout_width="439dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/biru2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Your Water Today"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kotakbiruluar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biru1" />
+
+    <ImageView
+        android:id="@+id/im_home1dalam"
+        android:layout_width="122.16dp"
+        android:layout_height="96.42dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="#3BD3D6 "
+        android:rotation="-21"
+        android:src="@drawable/kotakbirudalam1"
+        app:layout_constraintBottom_toBottomOf="@+id/im_home1"
+        app:layout_constraintEnd_toEndOf="@+id/im_home1" />
+
+    <TextView
+        android:id="@+id/tv_aturdietmu"
+        android:layout_width="145dp"
+        android:layout_height="102dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Atur Dietmu"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/im_home1"
+        app:layout_constraintEnd_toEndOf="@+id/im_home1"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="@+id/im_home1"
+        app:layout_constraintTop_toBottomOf="@+id/biru1"
+        app:layout_constraintVertical_bias="0.555" />
+
+
+    <ImageView
+        android:id="@+id/im_home2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/kotakbiruluar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_home1" />
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="149dp"
+        android:layout_height="93dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Ukur BMI-Mu"
+        android:textColor="#FDFDFD"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/im_home2"
+        app:layout_constraintEnd_toEndOf="@+id/im_home2"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="@+id/im_home2"
+        app:layout_constraintTop_toTopOf="@+id/im_home2"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <ImageView
+        android:id="@+id/im_home2dalam"
+        android:layout_width="118dp"
+        android:layout_height="122dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/lingkarandalam1"
+        app:layout_constraintBottom_toBottomOf="@+id/im_home2"
+        app:layout_constraintEnd_toEndOf="@+id/im_home2" />
+
+    <ImageView
+        android:id="@+id/im_home3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/kotakputihluar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

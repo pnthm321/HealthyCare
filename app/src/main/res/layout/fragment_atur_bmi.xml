@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AturBmiFragment">
+
+    <ImageView
+        android:id="@+id/im_backgroundukurbmi"
+        android:layout_width="436dp"
+        android:layout_height="168dp"
+        android:src="@drawable/kotak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_ukurbmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/kotakbiruluar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ukurbmipage"
+        android:layout_width="149dp"
+        android:layout_height="93dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Ukur BMI-Mu"
+        android:textColor="#FDFDFD"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/im_ukurbmi"
+        app:layout_constraintEnd_toEndOf="@+id/im_ukurbmi"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="@+id/im_ukurbmi"
+        app:layout_constraintTop_toTopOf="@+id/im_ukurbmi"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <ImageView
+        android:id="@+id/im_ukurbmidalam"
+        android:layout_width="118dp"
+        android:layout_height="122dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/lingkarandalam1"
+        app:layout_constraintBottom_toBottomOf="@+id/im_ukurbmi"
+        app:layout_constraintEnd_toEndOf="@+id/im_ukurbmi" />
+
+    <ImageView
+        android:id="@+id/im_wanita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="84dp"
+        android:src="@drawable/wanita"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_ukurbmi" />
+
+    <ImageView
+        android:id="@+id/im_pria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/pria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_ukurbmi" />
+
+    <ImageView
+        android:id="@+id/im_tunjukpria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/polygon_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_pria" />
+
+    <ImageView
+        android:id="@+id/im_tunjukwanita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="116dp"
+        android:src="@drawable/polygon_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_wanita" />
+
+    <ImageView
+        android:id="@+id/im_cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/button_cm"
+        app:layout_constraintBottom_toBottomOf="@+id/et_tinggi"
+        app:layout_constraintStart_toEndOf="@+id/et_tinggi"
+        app:layout_constraintTop_toTopOf="@+id/et_tinggi"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/im_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/button_kg"
+        app:layout_constraintBottom_toBottomOf="@+id/et_beratbadan"
+        app:layout_constraintStart_toEndOf="@+id/et_beratbadan"
+        app:layout_constraintTop_toTopOf="@+id/et_beratbadan"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_tinggi"
+        style="@style/Theme.HealthyCare.EditText"
+        android:layout_width="266dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:hint="Tinggi"
+        android:inputType="textPersonName"
+        android:textColor="#ADA4A5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_ukurbmi" />
+
+    <ImageView
+        android:id="@+id/im_swap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/swap"
+        app:layout_constraintBottom_toBottomOf="@+id/et_tinggi"
+        app:layout_constraintStart_toStartOf="@+id/et_tinggi"
+        app:layout_constraintTop_toTopOf="@+id/et_tinggi"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <EditText
+        android:id="@+id/et_beratbadan"
+        style="@style/Theme.HealthyCare.EditText"
+        android:layout_width="266dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Berat Badan"
+        android:inputType="textPersonName"
+        android:textColor="#ADA4A5"
+        app:layout_constraintEnd_toEndOf="@+id/et_tinggi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_tinggi"
+        app:layout_constraintTop_toBottomOf="@+id/et_tinggi" />
+
+    <ImageView
+        android:id="@+id/im_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/weight_scale_1"
+        app:layout_constraintBottom_toBottomOf="@+id/et_beratbadan"
+        app:layout_constraintStart_toStartOf="@+id/et_beratbadan"
+        app:layout_constraintTop_toTopOf="@+id/et_beratbadan" />
+
+    <EditText
+        android:id="@+id/et_umur"
+        style="@style/Theme.HealthyCare.EditText"
+        android:layout_width="266dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Umur"
+        android:inputType="textPersonName"
+        android:textColor="#ADA4A5"
+        app:layout_constraintEnd_toEndOf="@+id/et_beratbadan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_beratbadan"
+        app:layout_constraintTop_toBottomOf="@+id/et_beratbadan" />
+
+    <ImageView
+        android:id="@+id/im_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/et_umur"
+        app:layout_constraintStart_toStartOf="@+id/et_umur"
+        app:layout_constraintTop_toTopOf="@+id/et_umur" />
+
+    <Button
+        android:id="@+id/button_detailsmakanan2"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="172dp"
+        android:backgroundTint="#7387DD"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:cornerRadius="99dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bmiresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="0"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_detailsmakanan2"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
