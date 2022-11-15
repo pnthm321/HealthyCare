@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+    <ImageView
+        android:id="@+id/im_detailbackground1"
+        android:layout_width="570dp"
+        android:layout_height="489dp"
+        android:src="@drawable/bagdetailbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_detaillingkaran"
+        android:layout_width="349dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/bagdetaillingkaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_detailpancake"
+        android:layout_width="297dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/pancake_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_detailbackground2"
+        android:layout_width="435dp"
+        android:layout_height="428dp"
+        android:src="@drawable/bagdetailputih"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_detailpancake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="336dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Blueberry Pancake"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_detailpancakeby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="by James  Ruthh"
+        android:textColor="#7B6F72"
+        app:layout_constraintStart_toStartOf="@+id/tv_detailpancake"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailpancake" />
+
+    <TextView
+        android:id="@+id/tv_detailnutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="412dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Nutrition"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_detaildesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="516dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Description"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_detaildescinfo"
+        android:layout_width="386dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Pancake adalah kue dadar yang terbuat dari tepung terigu, telur, gula, dan susu. Bahan-bahan ini kemudian dicampur dengan air untuk membentuk adonan kental, yang nantinya akan digoreng atau dipanggang diatas wajan datar atau pan yang sudah diolesi minyak terlebih dahulu."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_detailinfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/bagdetailkotakinfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailnutrition" />
+
+    <TextView
+        android:id="@+id/tv_detailinfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="180kCal"
+        app:layout_constraintBottom_toBottomOf="@+id/im_detailinfo1"
+        app:layout_constraintEnd_toEndOf="@+id/im_detailinfo1"
+        app:layout_constraintStart_toStartOf="@+id/im_detailinfo1"
+        app:layout_constraintTop_toTopOf="@+id/im_detailinfo1" />
+
+    <ImageView
+        android:id="@+id/im_detailinfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/bagdetailkotakinfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailnutrition" />
+
+    <TextView
+        android:id="@+id/tv_detailinfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="80g fats"
+        app:layout_constraintBottom_toBottomOf="@+id/im_detailinfo2"
+        app:layout_constraintEnd_toEndOf="@+id/im_detailinfo2"
+        app:layout_constraintStart_toStartOf="@+id/im_detailinfo2"
+        app:layout_constraintTop_toTopOf="@+id/im_detailinfo2" />
+
+    <ImageView
+        android:id="@+id/im_detailinfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="140dp"
+        android:src="@drawable/detailkotakinfo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailnutrition" />
+
+    <TextView
+        android:id="@+id/tv_detailinfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="20g Proteins"
+        app:layout_constraintBottom_toBottomOf="@+id/im_detailinfo3"
+        app:layout_constraintEnd_toEndOf="@+id/im_detailinfo3"
+        app:layout_constraintStart_toStartOf="@+id/im_detailinfo3"
+        app:layout_constraintTop_toTopOf="@+id/im_detailinfo3" />
+
+    <ImageView
+        android:id="@+id/im_detailinfo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/detailkotakinfo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailnutrition" />
+
+    <TextView
+        android:id="@+id/tv_detailinfo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="50g Carbo"
+        app:layout_constraintBottom_toBottomOf="@+id/im_detailinfo4"
+        app:layout_constraintEnd_toEndOf="@+id/im_detailinfo4"
+        app:layout_constraintStart_toStartOf="@+id/im_detailinfo4"
+        app:layout_constraintTop_toTopOf="@+id/im_detailinfo4" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/backnavigasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
