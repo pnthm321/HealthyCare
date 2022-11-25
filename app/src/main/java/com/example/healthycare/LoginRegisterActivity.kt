@@ -1,7 +1,10 @@
 package com.example.healthycare
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.navigation.fragment.NavHostFragment
@@ -21,4 +24,10 @@ class LoginRegisterActivity : AppCompatActivity() {
             }
         }
     }
+    public fun startMainActivity() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
 }
+

@@ -19,13 +19,14 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="121dp"
+        android:layout_height="131dp"
         android:layout_marginTop="112dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/pria"
         tools:src="@tools:sample/avatars" />
 
     <TextView
@@ -103,14 +104,14 @@
         android:id="@+id/button_accountupdate"
         android:layout_width="285dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#171F1D"
         android:fontFamily="@font/poppins_bold"
         android:text="Update"
         android:textAllCaps="false"
         app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_accountnohp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

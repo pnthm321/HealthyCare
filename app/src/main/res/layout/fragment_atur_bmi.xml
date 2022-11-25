@@ -190,20 +190,20 @@
         app:layout_constraintTop_toTopOf="@+id/et_umur" />
 
     <Button
-        android:id="@+id/button_detailsmakanan2"
+        android:id="@+id/button_calculate"
         android:layout_width="114dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#7387DD"
         android:fontFamily="@font/poppins_bold"
         android:text="Calculate"
         android:textAllCaps="false"
         android:textSize="12sp"
         app:cornerRadius="99dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_umur" />
 
     <TextView
         android:id="@+id/tv_bmiresult"
@@ -213,10 +213,10 @@
         android:fontFamily="@font/poppins_medium"
         android:text="0"
         android:textColor="#000000"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_detailsmakanan2"
+        app:layout_constraintTop_toBottomOf="@+id/button_calculate"
         tools:visibility="visible" />
 
 

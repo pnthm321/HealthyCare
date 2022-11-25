@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_bot_nav"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/aturDietmuFragment"
+        android:icon="@drawable/diet_bot_nav"
+        android:title="Atur Dietmu" />
+
+    <item
+        android:id="@+id/aturBmiFragment"
+        android:icon="@drawable/bmi_bot_nav"
+        android:title="Ukur BMI" />
+
+
+    <item
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/profile_bot_nav"
+        android:title="Account" />
+
+    </menu>

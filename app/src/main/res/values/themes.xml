@@ -23,6 +23,11 @@
         <item name="android:textSize">13sp</item>
     </style>
 
+    <style name="Theme.HealthyCare.BottomNavigationLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
     <style name="Theme.HealthyCare.EditTextSign">
         <item name="android:fontFamily">@font/poppins_medium</item>
         <item name="android:background">@drawable/edit_text_sign</item>
