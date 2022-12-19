@@ -24,5 +24,14 @@
         android:id="@+id/aturDietmuFragment"
         android:name="com.example.healthycare.AturDietmuFragment"
         android:label="fragment_atur_dietmu"
-        tools:layout="@layout/fragment_atur_dietmu" />
+        tools:layout="@layout/fragment_atur_dietmu" >
+        <action
+            android:id="@+id/action_aturDietmuFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.healthycare.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>

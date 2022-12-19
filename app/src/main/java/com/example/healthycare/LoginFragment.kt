@@ -32,7 +32,8 @@ class LoginFragment : Fragment() {
             //activity?.finish()
         }
         binding.textView7.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+            val toRegisterFragment = LoginFragmentDirections.actionLoginFragmentToRegisterFragment()
+            view.findNavController().navigate(toRegisterFragment)
         }
     }
 
@@ -41,13 +42,4 @@ class LoginFragment : Fragment() {
         _binding = null
     }
 
-    companion object {
-
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            LoginFragment().apply {
-                arguments = Bundle().apply {
-                }
-            }
-    }
 }

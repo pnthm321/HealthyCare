@@ -125,4 +125,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_gelas"
+        android:layout_width="332dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/im_home3"
+        app:layout_constraintEnd_toEndOf="@+id/im_home3"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="@+id/im_home3"
+        app:layout_constraintTop_toTopOf="@+id/im_home3"
+        app:layout_constraintVertical_bias="0.346"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:itemCount="8"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_gelas" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

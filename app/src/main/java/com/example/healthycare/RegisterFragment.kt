@@ -5,13 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.healthycare.databinding.FragmentLoginBinding
 import com.example.healthycare.databinding.FragmentRegisterBinding
 
 
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 class RegisterFragment : Fragment() {
     private var _binding: FragmentRegisterBinding? = null
@@ -27,6 +26,16 @@ class RegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.button2.setOnClickListener{
+            findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+            //val intent = Intent(activity, MainActivity::class.java)
+            //activity?.startActivity(intent)
+            //activity?.finish()
+        }
+        binding.textView12.setOnClickListener { view ->
+            val toLoginFragment = RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
+            view.findNavController().navigate(toLoginFragment)
+        }
 
     }
 
